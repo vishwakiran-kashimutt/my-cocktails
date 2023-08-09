@@ -1,0 +1,40 @@
+.container {
+    .details-container {
+        display: flex;
+        column-gap: 100px;
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+            display: block;
+        }
+    }
+    .cocktail-img {
+        img {
+            height: 250px;
+            width: 250px;
+        }
+    }
+    .cocktail-detail-section {
+        .header {
+            color: white;
+            .header-text {
+                font-weight: 200;
+                font-size: 36px;
+            }
+        }
+        .instruction {
+            color: white;
+            &-header {
+                font-weight: 500;
+            }
+            &-text {
+                font-weight: 200;
+            }
+        }
+        table {
+            margin-top: 16px;
+            td {
+                background-color: black;
+                color: white
+            }
+        }
+    }
+}

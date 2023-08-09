@@ -1,0 +1,8 @@
+<ng-container *ngFor="let cocktail of cocktailDetails">
+    <div class="card-container" (click)="slectedCocktail(cocktail.idDrink)">
+      <div class="cocktail-name">
+        <img class="cocktail-img" src="{{cocktail.strDrinkThumb}}" alt="Mojito">
+        <div>{{cocktail.strDrink}}</div>
+      </div>
+    </div>
+  </ng-container>

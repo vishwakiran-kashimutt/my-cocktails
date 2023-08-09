@@ -1,0 +1,30 @@
+<div class="container">
+    <app-header></app-header>
+    <div class="details-container">
+      <div class="cocktail-img">
+        <img src="{{cockTailDetail?.strDrinkThumb}}">
+      </div>
+      <div class="cocktail-detail-section">
+        <div class="header">
+          <span class="header-text">{{cockTailDetail?.strDrink}}</span>
+        </div>
+        <div class="instruction">
+          <span class="instruction-header">How to make it: </span><span class="instruction-text">{{cockTailDetail?.strInstructions}}</span>
+        </div>
+        <div class="ingredients-measurement">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Ingredients:</td>
+                <td *ngFor="let ingredient of ingredients">{{ingredient}}</td>
+              </tr>
+              <tr>
+                <td>Measurement:</td>
+                <td *ngFor="let measurement of ingredientMeasurement">{{measurement}}</td>
+              </tr>
+              </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
