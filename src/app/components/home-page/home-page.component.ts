@@ -14,9 +14,19 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit() {
   }
+
+
+  /**
+   * Navigate to cocktails page
+   */
   goToCocktailsPage() {
     this.router.navigate(['/cocktailsPage'])
   }
+
+
+  /**
+   * Navigate to blank page if cocktail is not present
+   */
   goToBlankPage() {
     this.router.navigate(['/blank'])
   }

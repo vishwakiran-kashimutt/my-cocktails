@@ -16,6 +16,10 @@ export class CocktailCardComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  /**
+   * Emits the selected value from Child component to parent
+   */
   slectedCocktail(value: any) {
     this.selectedCocktailDetails.emit(value);
   }

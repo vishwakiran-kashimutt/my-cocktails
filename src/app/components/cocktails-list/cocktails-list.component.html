@@ -1,5 +1,14 @@
 
 <div class="container">
     <app-header></app-header>
-        <app-cocktail-card class="cocktails-list" [cocktailDetails]="cocktails" (selectedCocktailDetails)="getSelectedCocktail($event)"></app-cocktail-card>
+    <label for="filters" class="filters-label">Filter By</label>
+      <select class="form-select filters" id="filters" ngModel="filter" (change)="filterBy($event)">
+        <option *ngFor="let filter of filters">{{filter}}</option>
+      </select>
+        <ng-container *ngIf="cocktails?.length > 0">
+            <app-cocktail-card class="cocktails-list" [cocktailDetails]="cocktails" (selectedCocktailDetails)="getSelectedCocktail($event)"></app-cocktail-card>
+        </ng-container>
+        <div *ngIf="cocktails?.length==0" class="non-alcoholic-drinks">
+            No Non-Alcohollic drinks....!
+        </div>
   </div>

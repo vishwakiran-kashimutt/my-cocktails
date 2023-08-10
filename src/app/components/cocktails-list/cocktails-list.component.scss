@@ -5,3 +5,25 @@
     margin: auto;
     column-gap: 100px;
 }
+
+.filters {
+    width: 150px;
+    position: absolute;
+    right: 0;
+    margin-right: 35px;
+    margin-top: 25px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+.filters-label {
+    position: absolute;
+    right: 0;
+    margin-right: 125px;
+    color: white;
+}
+
+.non-alcoholic-drinks {
+    color: white;
+    font-size: 48px;
+}
